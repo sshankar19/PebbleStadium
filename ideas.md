@@ -1,0 +1,4 @@
+- Pebble app compatibility with Windows Phone
+- Website to scrape for graduate school finder (safe bet)
+- thatsoundslikeass.com - Semantics to find if the phrase sounds easy
+- leap motion app to teach sign language
