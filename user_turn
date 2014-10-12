@@ -1,0 +1,60 @@
+bool select = false;
+bool repick = false;
+currentpoke = null;
+
+def user_turn(status) {
+	if (curr == null && remPoke == 0){
+		print "You lost";
+		status = false;
+		disp "return to main"-> on click = return to main page
+	}
+	if (other's remPoke == 0 && other's curr == null){
+		print "you win"
+		status = false;
+		disp "return to main"-> on click = return to main page
+	}
+	return choosePoke();
+}
+
+def choosePoke(){
+	if(!select){ //need to select a pokemon
+		if(remPoke == 0){
+			print "No other pokemon not fainted"
+			select = true;
+			return choose_play();
+		}
+		else {
+			select = true;
+			disp avail pokemon
+			user select pokemon
+			select = true;
+			return null;
+		}
+	}
+	else{
+		select = true;
+		return choose_play();
+	}
+}
+
+
+def choose_play() {
+	disp "Use", "Select other", "run"
+	option = user select
+	switch option
+		1 -> return select_move();
+		2 -> select = false; return choosePoke();
+		3 -> print = "no running away from a trainer battle"; return select_play();
+}
+
+
+def select_move() {
+	if(no moves with > 0 pp){
+		return struggle;
+	}
+	else {
+		disp moves with > 0 pp
+		user_select move = moves();
+		return move;
+	}
+}

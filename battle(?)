@@ -1,0 +1,20 @@
+
+bool status = true;
+
+def battle(){
+	new User 
+	while(status){
+		User.turn = user_turn;//both turns done in synchronous if not cpu
+		Cpu.turn = cpu_turn;
+		gobattle(user, cpu); //do last
+	}
+	reset user's pokemon's stats
+}
+
+
+gobattle(user, cpu){
+	if(user.poke.currentspeed >= cpu.poke.currentspeed){
+
+	}
+	
+}

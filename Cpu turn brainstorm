@@ -1,0 +1,35 @@
+bool select = false;
+bool repick = false;
+currentpoke = null;
+
+def main() {
+	if (curr == null && remPoke == 0){
+		return;
+	}
+	return choosePoke();
+}
+
+def choosePoke(){
+	if(!select){ //need to select a pokemon
+		select = true;
+		disp avail pokemon
+		user select pokemon
+		select = true;
+		return null;
+	}
+	else{
+		select = true;
+		return select_move();
+	}
+}
+
+def select_move() {
+	if(no moves with > 0 pp){
+		return struggle;
+	}
+	else {
+		disp moves with > 0 pp
+		user_select move = moves();
+		return move;
+	}
+}

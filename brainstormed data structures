@@ -1,0 +1,46 @@
+class pokemon {
+	String name;
+	int maxhealth;
+	int currenthealth;
+	int speed;
+	int currentspeed;
+	int attack;
+	int currAttack;
+	int def;
+	int currDef;
+	int spAtk;
+	int currSpAtk;
+	int spDef;
+	int curSpDef;
+	enum type1;
+	enum type2;
+	enum status;
+	int confusion;
+	int dead;
+
+	def init;
+
+	def copy(pokemon poke){
+		//copy of poke
+	}
+
+	int calcHealth(int damage){
+
+		currentHealth = currentHealth-damage;
+		if(this.currentHealth == 0){
+			dead = 1;
+		}
+		return dead;
+	}
+
+	void reset(){
+		//set everything to max, or w/e
+	}
+
+}
+
+class user {
+	bool select;
+	bool currPokemon;
+	List<Pokemon>;
+}
