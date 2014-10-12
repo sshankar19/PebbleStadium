@@ -1,0 +1,17 @@
+{
+  "uuid": "6ef1d65e-00dc-4a14-9f68-24ae9e98b5b9",
+  "shortName": "PebbleStadium",
+  "longName": "PebbleStadium",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
